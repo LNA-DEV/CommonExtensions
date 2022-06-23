@@ -2,7 +2,7 @@ name: "Build and deploy to nuget.org"
 
 on:
   push: 
-    branches: [ master ]
+    branches: [ master ] 
 
 env:
   PROJECT_PATH: "CommonExtensions/CommonExtensions.csproj"
