@@ -1,9 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
     <Authors>LNA-DEV</Authors>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
@@ -11,9 +8,18 @@
     <RepositoryUrl>https://github.com/LNA-DEV/CommonExtensions</RepositoryUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>LNA-DEV.$(AssemblyName)</PackageId>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageIcon>Pingüino-Square.png</PackageIcon>
+	<!--<TargetFramework>net6</TargetFramework>-->
+	<!--<ImplicitUsings>enable</ImplicitUsings>-->
+    <!--<Nullable>enable</Nullable>-->
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\Pingüino-Square.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

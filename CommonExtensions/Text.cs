@@ -1,6 +1,8 @@
-﻿namespace CommonExtensions
+﻿using System.Collections.Generic;
+
+namespace CommonExtensions
 {
-    public static class Common
+    public static class Text
     {
         public static string ToCamelCase(this string s)
         {
@@ -39,16 +41,6 @@
             }
 
             return result;
-        }
-
-        public static bool IsNullOrEmpty<T>(this IEnumerable<T> elements)
-        {
-            if (elements == null || elements.Count() == 0)
-            {
-                return true;
-            }
-
-            return false;
         }
     }
 }
