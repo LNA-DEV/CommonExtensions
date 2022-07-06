@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace CommonExtensions
 {
@@ -45,16 +41,6 @@ namespace CommonExtensions
             }
 
             return result;
-        }
-
-        public static bool IsNullOrEmpty<T>(this IEnumerable<T> elements)
-        {
-            if (elements == null || elements.Count() == 0)
-            {
-                return true;
-            }
-
-            return false;
         }
     }
 }
