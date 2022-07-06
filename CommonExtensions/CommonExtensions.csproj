@@ -9,12 +9,17 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>LNA-DEV.$(AssemblyName)</PackageId>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageIcon>Pingüino-Square.png</PackageIcon>
 	<!--<TargetFramework>net6</TargetFramework>-->
 	<!--<ImplicitUsings>enable</ImplicitUsings>-->
     <!--<Nullable>enable</Nullable>-->
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\Pingüino-Square.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

@@ -2,7 +2,7 @@
 
 namespace CommonExtensions
 {
-    public static class Common
+    public static class Text
     {
         public static string ToCamelCase(this string s)
         {
