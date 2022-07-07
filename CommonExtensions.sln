@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonExtensions.Test", "CommonExtensions.Test\CommonExtensions.Test.csproj", "{A1D5838E-D794-4F79-A7C6-C230F5BCDB75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{7CE9B51E-E2A4-4A9B-8302-EAF8F85D0229}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CE9B51E-E2A4-4A9B-8302-EAF8F85D0229}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CE9B51E-E2A4-4A9B-8302-EAF8F85D0229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D5838E-D794-4F79-A7C6-C230F5BCDB75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D5838E-D794-4F79-A7C6-C230F5BCDB75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D5838E-D794-4F79-A7C6-C230F5BCDB75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D5838E-D794-4F79-A7C6-C230F5BCDB75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
