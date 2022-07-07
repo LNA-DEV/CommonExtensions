@@ -28,7 +28,7 @@ namespace CommonExtensions
             return result;
         }
 
-        public static string SplitToString(this List<string> strings, string separator)
+        public static string SplitToString(this IEnumerable<string> strings, string separator)
         {
             string result = "";
 

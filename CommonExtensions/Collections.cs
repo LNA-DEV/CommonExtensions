@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace CommonExtensions
 {
-    public static class Assertions
+    public static class Collections
     {
         public static bool IsNullOrEmpty<T>(this IEnumerable<T> elements)
         {
