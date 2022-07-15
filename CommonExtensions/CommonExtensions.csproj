@@ -4,12 +4,14 @@
     <Authors>LNA-DEV</Authors>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageProjectUrl>https://commonextensions.lna-dev.com/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/LNA-DEV/CommonExtensions</RepositoryUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>LNA-DEV.$(AssemblyName)</PackageId>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <PackageIcon>Pingüino-Square.png</PackageIcon>
+    <Description>This is a nuget-package / C# libary with common extensions. It's open source on GitHub and available in the default nuget-galllery nuget.org. The CI/CD pipeline is set up to publish a push to master automatically to the nuget-gallery. If you have a good idea for a new extension method go to GitHub and participate in the project.</Description>
+    <PackageTags>Extensions;Extension;Common;CommonExtension;CommonExtensions;LNA-DEV</PackageTags>
 	<!--<TargetFramework>net6</TargetFramework>-->
 	<!--<ImplicitUsings>enable</ImplicitUsings>-->
     <!--<Nullable>enable</Nullable>-->
@@ -24,6 +26,10 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
   </ItemGroup>
 
 </Project>
