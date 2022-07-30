@@ -4,7 +4,7 @@
     <Authors>LNA-DEV</Authors>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
-    <PackageProjectUrl>https://commonextensions.lna-dev.com/</PackageProjectUrl>
+    <PackageProjectUrl>https://ce.lna-dev.net/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/LNA-DEV/CommonExtensions</RepositoryUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>LNA-DEV.$(AssemblyName)</PackageId>
