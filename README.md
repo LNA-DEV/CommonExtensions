@@ -1,16 +1,3 @@
-# CommonExtensions
-
-This is a nuget-package / C# library with common extensions. It's open source on GitHub and available in the default nuget-gallery nuget.org. The CI/CD pipeline is set up to publish a push to master automatically to the nuget-gallery. If you have a good idea for a new extension method go to GitHub and participate in the project. 
-
-[Docs](https://ce.lna-dev.net)
-
-
-
-
-
-
-
-
 <!-- VERSION: LNA-DEV-README-TEMPLATE V1.2 -->
 
 <div id="top"></div>
@@ -22,26 +9,21 @@ This is a nuget-package / C# library with common extensions. It's open source on
 [![MIT License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
-<!-- TODO Change the Link -->
-<!-- TODO Change the image -->
 <br />
 <div align="center">
-  <a href="https://github.com/lna-dev/README-TEMPLATE">
+  <a href="https://github.com/LNA-DEV/CommonExtensions">
     <img src="https://lna-dev.com/Assets/Metadata/Pingüino-Square.png" alt="Logo" width="80" height="80">
   </a>
 
-<!-- TODO Change the project name -->
-<h3 align="center">README-Template</h3>
+<h3 align="center">Common Extensions</h3>
 
-<!-- TODO Change the description -->
-In this repository I have created a README-Template based on Best-README-Template
+ This is a nuget-package / C# libary with common extensions. It's open source on GitHub and available in the default nuget-galllery nuget.org.
 
 <p align="center">
 
 <br />
 
-<!-- Change the Link -->
-<a href="https://lna-dev.com"><strong>Explore the Project »</strong></a>
+<a href="https://ce.lna-dev.net"><strong>Explore the Docs »</strong></a>
 <br />
 <br />
 <a href="https://github.com/lna-dev/README-TEMPLATE/issues">Report Bug</a>
@@ -53,8 +35,7 @@ In this repository I have created a README-Template based on Best-README-Templat
 <!-- ABOUT THE PROJECT -->
 ## About The Project 🗺️
 
-<!-- TODO Tell the world about your project -->
-Here you can describe your project a little bit more. Explain the world your thoughts and what your project does. Have fun and build something.
+This is a nuget-package / C# library with common extensions. It's open source on GitHub and available in the default nuget-gallery nuget.org. The CI/CD pipeline is set up to publish a push to master automatically to the nuget-gallery. If you have a good idea for a new extension method go to GitHub and participate in the project.
 
 <p align="right">(<a href="#top">back to top ☝</a>)</p>
 
