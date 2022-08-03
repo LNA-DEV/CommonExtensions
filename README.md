@@ -26,9 +26,9 @@
 <a href="https://ce.lna-dev.net"><strong>Explore the Docs »</strong></a>
 <br />
 <br />
-<a href="https://github.com/lna-dev/README-TEMPLATE/issues">Report Bug</a>
+<a href="https://github.com/lna-dev/CommonExtensions/issues">Report Bug</a>
 ·
-<a href="https://github.com/lna-dev/README-TEMPLATE/issues">Request Feature</a>
+<a href="https://github.com/lna-dev/CommonExtensions/issues">Request Feature</a>
   </p>
 </div>
 
@@ -41,23 +41,21 @@ This is a nuget-package / C# library with common extensions. It's open source on
 
 ## Build With 🏗️
 
-<!-- TODO Go to https://github.com/Ileriayo/markdown-badges and search for a fitting batch🙃 -->
-
-![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)  
+![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)  
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)  
+![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)  
 
 <p align="right">(<a href="#top">back to top ☝</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contributing ✨
 
-<!-- TODO Customize the contributing text -->
 If you have any ideas or want to contribute yourself... go for it. I really appreciate it if some of you have cool ideas🚀
 
 <p align="right">(<a href="#top">back to top ☝</a>)</p>
 
 <!-- LICENSE -->
-<!-- TODO Add the License description -->
 ## License 📝
 
 The code is distributed under the MIT License. See `LICENSE` for more information.
@@ -65,25 +63,21 @@ The code is distributed under the MIT License. See `LICENSE` for more informatio
 <p align="right">(<a href="#top">back to top ☝</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
-<!-- TODO Add your acknowledgments -->
 ## Acknowledgments 🙏
 
 - [LNA-DEV README-Template](https://github.com/lna-dev/README-Template)
-- [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 - [Markdown-Badges](https://github.com/Ileriayo/markdown-badges)
 
 <p align="right">(<a href="#top">back to top ☝</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- TODO Update your user name -->
-<!-- TODO Update your project name -->
-[contributors-shield]: https://img.shields.io/github/contributors/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[contributors-url]: https://github.com/lna-dev/README-TEMPLATE/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[forks-url]: https://github.com/lna-dev/README-TEMPLATE/network/members
-[stars-shield]: https://img.shields.io/github/stars/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[stars-url]: https://github.com/lna-dev/README-TEMPLATE/stargazers
-[issues-shield]: https://img.shields.io/github/issues/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[issues-url]: https://github.com/lna-dev/README-TEMPLATE/issues
-[license-shield]: https://img.shields.io/github/license/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[license-url]: https://github.com/lna-dev/README-TEMPLATE/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/lna-dev/CommonExtensions.svg?style=for-the-badge
+[contributors-url]: https://github.com/lna-dev/CommonExtensions/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/lna-dev/CommonExtensions.svg?style=for-the-badge
+[forks-url]: https://github.com/lna-dev/CommonExtensions/network/members
+[stars-shield]: https://img.shields.io/github/stars/lna-dev/CommonExtensions.svg?style=for-the-badge
+[stars-url]: https://github.com/lna-dev/CommonExtensions/stargazers
+[issues-shield]: https://img.shields.io/github/issues/lna-dev/CommonExtensions.svg?style=for-the-badge
+[issues-url]: https://github.com/lna-dev/CommonExtensions/issues
+[license-shield]: https://img.shields.io/github/license/lna-dev/CommonExtensions.svg?style=for-the-badge
+[license-url]: https://github.com/lna-dev/CommonExtensions/blob/master/LICENSE
