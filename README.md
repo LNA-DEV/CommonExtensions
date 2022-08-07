@@ -4,7 +4,9 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![MIT License][license-shield]][license-url]  
+
+[![wakatime](https://wakatime.com/badge/user/d37401d6-1566-41ea-b7ab-8cc7d2c9f55b/project/7e9d2a76-6a3f-4636-b151-8dfceb009184.svg)](https://wakatime.com/badge/user/d37401d6-1566-41ea-b7ab-8cc7d2c9f55b/project/7e9d2a76-6a3f-4636-b151-8dfceb009184)
 
 This is a nuget-package / C# library with common extensions. It's open source on GitHub and available in the default nuget-gallery nuget.org.  
   
