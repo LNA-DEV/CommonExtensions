@@ -1,0 +1,29 @@
+baseURL: https://ce.lna-dev.net/
+languageCode: en-us
+title: CommonExtensions-Docs
+
+
+theme: Hugo-theme-learn
+
+outputs:
+  home : ["HTML", "RSS", "JSON"]
+
+params:
+  author: "LNA-DEV"
+  editURL: ""
+  description: ""
+  showVisitedLinks: false
+  disableSearch: false
+  disableAssetsBusting : false
+  disableInlineCopyToClipBoard : false
+  disableShortcutsTitle : false
+  disableLandingPageButton : true
+  disableLanguageSwitchingButton : false
+  disableBreadcrumb : false
+  disableMermaid : false
+  # customMermaidURL : "https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"
+  disableNextPrev : false
+  ordersectionsby : "weight"
+  # themeVariant : ""
+  # custom_css : ["css/foo.css", "css/bar.css"]
+  titleSeparator : "-"
