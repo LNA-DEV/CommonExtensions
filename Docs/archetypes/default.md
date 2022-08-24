@@ -4,6 +4,6 @@ date: {{ .Date }}
 draft: true
 
 weight: 5
-chapter: true
+chapter: false
 ---
 

@@ -4,10 +4,9 @@ date: 2022-08-23T22:46:08-06:00
 draft: false
 
 weight: 5
-chapter: true
+chapter: false
 ---
 
-# Text
 In this class are stored all ExtensionMethods which deal with text.
 
 <br>

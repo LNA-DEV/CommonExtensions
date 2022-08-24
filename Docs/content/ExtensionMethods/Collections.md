@@ -4,10 +4,8 @@ date: 2022-08-23T22:41:51-06:00
 draft: false
 
 weight: 5
-chapter: true
+chapter: false
 ---
-
-# Collections
 
 In this class are stored all ExtensionMethods based on collections.
 
