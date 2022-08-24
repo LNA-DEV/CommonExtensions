@@ -1,3 +1,6 @@
-baseURL: https://commonextensions.lna-dev.net/
+baseURL: https://ce.lna-dev.net/
 languageCode: en-us
 title: CommonExtensions-Docs
+
+
+theme: Hugo-theme-learn
