@@ -18,7 +18,6 @@ namespace CommonExtensions
         public static bool IsNotNullOrEmpty<T>(this IEnumerable<T> elements)
         {
             return !elements.IsNullOrEmpty();
-            //Test
         }
     }
 }
