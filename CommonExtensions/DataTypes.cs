@@ -1,6 +1,6 @@
 ﻿namespace CommonExtensions
 {
-    public static class DataTyps
+    public static class DataTypes
     {
         public static bool IsDefault<T>(this T value)
         {

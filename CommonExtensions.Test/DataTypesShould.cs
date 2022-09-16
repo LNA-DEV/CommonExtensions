@@ -2,7 +2,7 @@
 
 namespace CommonExtensions.Test
 {
-    public class DataTypsShould
+    public class DataTypesShould
     {
         [InlineData(true, false)]
         [InlineData(true, 0)]
