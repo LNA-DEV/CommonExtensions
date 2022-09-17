@@ -1,6 +1,9 @@
 *.pdf
 *node_modules
 
+package-lock.json
+package.json
+
 # Generated files by hugo
 /Docs/public/
 /Docs/resources/_gen/
@@ -13,7 +16,7 @@ hugo.darwin
 hugo.linux
 
 # Temporary lock file while building
-/.hugo_build.lock
+.hugo_build.lock
 
 
 .vscode

@@ -2,9 +2,8 @@
 title: "Text"
 date: 2022-08-23T22:46:08-06:00
 draft: false
-
+type: docs
 weight: 5
-chapter: false
 ---
 
 In this class are stored all ExtensionMethods which deal with text.

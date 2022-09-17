@@ -79,7 +79,7 @@ menu:
   main:
     - name: GitHub
       weight: 50
-      url: "https://github.com/LNA-DEV/FCommonExtensions"
+      url: "https://github.com/LNA-DEV/CommonExtensions"
       pre: <i class="fab fa-github"></i>
 
 # Outputs

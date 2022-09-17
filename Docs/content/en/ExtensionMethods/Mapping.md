@@ -2,9 +2,8 @@
 title: "Mapping"
 date: 2022-08-23T22:46:02-06:00
 draft: false
-
+type: docs
 weight: 5
-chapter: false
 ---
 
 Here there are all methods which deal with mapping

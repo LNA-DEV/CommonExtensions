@@ -1,4 +1,10 @@
-# Common Extensions Documentation
+---
+title: "Common Extensions Documentation"
+date: 2022-08-24T22:51:52-06:00
+draft: false
+type: docs
+description: ""
+---
 
 <!-- README.md start -->
 This is a nuget-package / C# library with common extensions. It's open source on GitHub and available in the default nuget-gallery nuget.org.  

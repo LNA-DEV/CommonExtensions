@@ -2,9 +2,8 @@
 title: "Collections"
 date: 2022-08-23T22:41:51-06:00
 draft: false
-
+type: docs
 weight: 5
-chapter: false
 ---
 
 In this class are stored all ExtensionMethods based on collections.

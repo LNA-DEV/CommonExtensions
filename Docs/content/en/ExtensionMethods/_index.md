@@ -2,9 +2,8 @@
 title: "ExtensionMethods"
 date: 2022-08-23T23:01:04-06:00
 draft: false
-
+type: docs
 weight: 5
-chapter: false
 ---
 
 ## What are extension methods?
