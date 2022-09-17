@@ -2,9 +2,9 @@
 *node_modules
 
 # Generated files by hugo
-/public/
-/resources/_gen/
-/assets/jsconfig.json
+/Docs/public/
+/Docs/resources/_gen/
+/Docs/assets/jsconfig.json
 hugo_stats.json
 
 # Executable may be added to repository

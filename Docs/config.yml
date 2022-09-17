@@ -1,7 +1,6 @@
 # Basics
-baseURL: https://fachinformatiker-prüfungsvorbereitung.de
-title: Fachinformatiker Prüfungsvorbereitung
-# theme: github.com/google/docsy
+baseURL: https://ce.lna-dev.net
+title: Common Extensions
 enableGitInfo: true
 
 # Modules
@@ -27,16 +26,13 @@ params:
   links:
     user:
       - name: "GitHub"
-        url: "https://github.com/LNA-DEV/Fachinformatiker-Pruefungsvorbereitung"
+        url: "https://github.com/LNA-DEV/CommonExtensions"
         icon: "fab fa-github"
-      - name: "Fachinformatiker.de Post"
-        url: "https://www.fachinformatiker.de/topic/171869-pr%C3%BCfungsvorbereitungs-zusammenfassungs-projekt-auf-github/"
-        icon: "fa fa-handshake"
       - name: "Impressum"
         url: "https://lna-dev.net/LegalDetails"
         icon: "fa fa-gavel"
   description: "Fachinformatiker Prüfungsvorbereitung ist eine Seite zur Prüfungsvorbereitung. Mit dieser Seite kannst du dich einfach auf die Fachinformatiker Prüfung vorbereiten."
-  copyright: "The Fachinformatiker-Prüfungsvorbereitung Authors"
+  copyright: "The CommonExtension Authors"
   privacy_policy: "https://lna-dev.net/PrivacyPolicy/"
   ui:
     readingTime:
@@ -49,8 +45,8 @@ params:
   prism_syntax_highlighting: false
 
   # GitHub
-  github_repo: "https://github.com/LNA-DEV/Fachinformatiker-Anwendungsentwicklung-Pruefungsvorbereitung"
-  github_project_repo: "https://github.com/LNA-DEV/Fachinformatiker-Anwendungsentwicklung-Pruefungsvorbereitung"
+  github_repo: "https://github.com/LNA-DEV/CommonExtensions"
+  github_project_repo: "https://github.com/LNA-DEV/CommonExtensions"
   github_branch: "dev"
 
   mermaid:
@@ -72,10 +68,10 @@ params:
     enable: false
 
 # Language
-languageCode: de
-defaultContentLanguage: de
+languageCode: en
+defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
-contentDir: "content/de"
+contentDir: "content/en"
 enableMissingTranslationPlaceholders: true
 
 # Menu
@@ -83,7 +79,7 @@ menu:
   main:
     - name: GitHub
       weight: 50
-      url: "https://github.com/LNA-DEV/Fachinformatiker-Anwendungsentwicklung-Pruefungsvorbereitung"
+      url: "https://github.com/LNA-DEV/FCommonExtensions"
       pre: <i class="fab fa-github"></i>
 
 # Outputs
