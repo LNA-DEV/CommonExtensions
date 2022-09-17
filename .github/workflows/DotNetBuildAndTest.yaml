@@ -1,8 +1,8 @@
 name: ".net Build and test"
 
 on:
-  push: 
-    branches: [ dev ] 
+  push:
+    branches: [dev]
 
 env:
   PROJECT_PATH: "CommonExtensions/CommonExtensions.csproj"
@@ -12,19 +12,19 @@ jobs:
     name: "Build"
     runs-on: windows-latest
     steps:
-    - name: "Checkout"
-      uses: actions/checkout@v2
+      - name: "Checkout"
+        uses: actions/checkout@v2
 
-    - name: "Install .net"
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: "6.x"
+      - name: "Install .net"
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: "6.x"
 
-    - name: "Restore packages"
-      run: dotnet restore ${{ env.PROJECT_PATH }}
+      - name: "Restore packages"
+        run: dotnet restore ${{ env.PROJECT_PATH }}
 
-    - name: "Build project"
-      run: dotnet build ${{ env.PROJECT_PATH }} --no-restore --configuration Release
+      - name: "Build project"
+        run: dotnet build ${{ env.PROJECT_PATH }} --no-restore --configuration Release
 
-    - name: "Test"
-      run: dotnet test ${{ env.PROJECT_PATH }} --no-restore --configuration Release
+      - name: "Test"
+        run: dotnet test ${{ env.PROJECT_PATH }} --no-restore --configuration Release
