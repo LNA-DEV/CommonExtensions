@@ -1,9 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
-
-weight: 5
-chapter: false
+draft: false
+type: docs
+weight: 1
+description: "" #TODO
 ---
-

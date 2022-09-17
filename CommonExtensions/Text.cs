@@ -11,23 +11,6 @@ namespace CommonExtensions
             return result;
         }
 
-        public static string SplitToString(this string[] strings, string seperator)
-        {
-            string result = "";
-
-            if (!strings.IsNullOrEmpty())
-            {
-                foreach (var item in strings)
-                {
-                    result += item + seperator;
-                }
-
-                result = result.Remove(result.Length - seperator.Length);
-            }
-
-            return result;
-        }
-
         public static string SplitToString(this IEnumerable<string> strings, string separator)
         {
             string result = "";
@@ -38,6 +21,8 @@ namespace CommonExtensions
                 {
                     result += item + separator;
                 }
+
+                result = result.Remove(result.Length - separator.Length);
             }
 
             return result;
