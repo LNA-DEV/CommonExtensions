@@ -10,7 +10,6 @@
             if (value == null)
                 return default(T) == null;
 
-
             return value.Equals(default(T));
         }
     }
