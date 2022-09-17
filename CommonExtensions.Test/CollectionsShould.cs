@@ -45,9 +45,9 @@ namespace CommonExtensions.Test
             bool isNullOrEmpty = fullList.IsNotNullOrEmpty();
 
             // Assert
-            isEmpty.ShouldBeTrue();
-            isNull.ShouldBeTrue();
-            isNullOrEmpty.ShouldBeFalse();
+            isEmpty.ShouldBeFalse();
+            isNull.ShouldBeFalse();
+            isNullOrEmpty.ShouldBeTrue();
         }
     }
 }
