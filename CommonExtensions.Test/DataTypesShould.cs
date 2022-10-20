@@ -60,7 +60,7 @@ namespace CommonExtensions.Test
         public Person? Boss { get; set; }
         public Person[]? Employees { get; set; }
     }
-    
+
     public class Person
     {
         public string? Name { get; set; }

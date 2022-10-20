@@ -21,7 +21,7 @@ namespace CommonExtensions.Test
             nullDog.ShouldBeTrue();
         }
 
-                [Fact]
+        [Fact]
         public void IsNotNull()
         {
             // Arrange
