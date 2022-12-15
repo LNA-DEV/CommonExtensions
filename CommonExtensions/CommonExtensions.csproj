@@ -28,9 +28,4 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-  <!-- TODO Maybe remove Shouldly here -->
-    <PackageReference Include="Shouldly" Version="4.0.3" />
-  </ItemGroup>
-
 </Project>
