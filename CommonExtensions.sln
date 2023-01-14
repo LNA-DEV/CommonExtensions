@@ -9,20 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
-		.github\workflows\nuget.yml = .github\workflows\nuget.yml
 		Pingüino-Square.png = Pingüino-Square.png
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonExtensions.Test", "CommonExtensions.Test\CommonExtensions.Test.csproj", "{A1D5838E-D794-4F79-A7C6-C230F5BCDB75}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{4150D295-46AF-45A3-93AE-1065A75DCFCE}"
-	ProjectSection(SolutionItems) = preProject
-		docs\Collections.md = docs\Collections.md
-		docs\index.md = docs\index.md
-		docs\Mapping.md = docs\Mapping.md
-		docs\Text.md = docs\Text.md
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,7 +34,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{4150D295-46AF-45A3-93AE-1065A75DCFCE} = {AD5D13BC-682E-4BBB-9F9C-2FA71CF5B08B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {21C03BA1-6DB7-489F-8CDC-4110127CC6D6}
