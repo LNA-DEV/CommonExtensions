@@ -1,53 +1,52 @@
 using Shouldly;
 
-namespace CommonExtensions.Test
+namespace CommonExtensions.Test;
+
+public class CollectionsShould
 {
-    public class CollectionsShould
+    [Fact]
+    public void IsNullOrEmpty()
     {
-        [Fact]
-        public void IsNullOrEmpty()
+        // Arrange
+        List<string> emptyList = new();
+        List<string>? nullList = null;
+        List<string> fullList = new()
         {
-            // Arrange
-            List<string> emptyList = new();
-            List<string>? nullList = null;
-            List<string> fullList = new()
-            {
-                "Blub",
-                "Hello World"
-            };
+            "Blub",
+            "Hello World"
+        };
 
-            // Act
-            bool isEmpty = emptyList.IsNullOrEmpty();
-            bool isNull = nullList.IsNullOrEmpty();
-            bool isNotNullOrEmpty = fullList.IsNullOrEmpty();
+        // Act
+        var isEmpty = emptyList.IsNullOrEmpty();
+        var isNull = nullList.IsNullOrEmpty();
+        var isNotNullOrEmpty = fullList.IsNullOrEmpty();
 
-            // Assert
-            isEmpty.ShouldBeTrue();
-            isNull.ShouldBeTrue();
-            isNotNullOrEmpty.ShouldBeFalse();
-        }
+        // Assert
+        isEmpty.ShouldBeTrue();
+        isNull.ShouldBeTrue();
+        isNotNullOrEmpty.ShouldBeFalse();
+    }
 
-        [Fact]
-        public void IsNotNullOrEmpty()
+    [Fact]
+    public void IsNotNullOrEmpty()
+    {
+        // Arrange
+        List<string> emptyList = new();
+        List<string>? nullList = null;
+        List<string> fullList = new()
         {
-            // Arrange
-            List<string> emptyList = new();
-            List<string>? nullList = null;
-            List<string> fullList = new()
-            {
-                "Blub",
-                "Hello World"
-            };
+            "Blub",
+            "Hello World"
+        };
 
-            // Act
-            bool isEmpty = emptyList.IsNotNullOrEmpty();
-            bool isNull = nullList.IsNotNullOrEmpty();
-            bool isNullOrEmpty = fullList.IsNotNullOrEmpty();
+        // Act
+        var isEmpty = emptyList.IsNotNullOrEmpty();
+        var isNull = nullList.IsNotNullOrEmpty();
+        var isNullOrEmpty = fullList.IsNotNullOrEmpty();
 
-            // Assert
-            isEmpty.ShouldBeFalse();
-            isNull.ShouldBeFalse();
-            isNullOrEmpty.ShouldBeTrue();
-        }
+        // Assert
+        isEmpty.ShouldBeFalse();
+        isNull.ShouldBeFalse();
+        isNullOrEmpty.ShouldBeTrue();
     }
 }

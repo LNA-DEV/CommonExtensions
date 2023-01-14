@@ -1,40 +1,73 @@
 using CommonExtensions.Test.Models;
 using Shouldly;
 
-namespace CommonExtensions.Test
+namespace CommonExtensions.Test;
+
+public class ObjectsShould
 {
-    public class ObjectsShould
+    [Fact]
+    public void IsNull()
     {
-        [Fact]
-        public void IsNull()
+        // Arrange
+        TestDog dog = new();
+        TestDog? anotherDog = null;
+
+        // Act
+        var notNullDog = dog.IsNull();
+        var nullDog = anotherDog.IsNull();
+
+        // Assert
+        notNullDog.ShouldBeFalse();
+        nullDog.ShouldBeTrue();
+    }
+
+    [Fact]
+    public void IsNotNull()
+    {
+        // Arrange
+        TestDog dog = new();
+        TestDog? anotherDog = null;
+
+        // Act
+        var notNullDog = dog.IsNotNull();
+        var nullDog = anotherDog.IsNotNull();
+
+        // Assert
+        notNullDog.ShouldBeTrue();
+        nullDog.ShouldBeFalse();
+    }
+
+    [Fact]
+    public void TrySystemJsonDeserializationObject()
+    {
+        // Arrange
+        var personName = "Joe";
+        var person = new Person
         {
-            // Arrange
-            TestDog dog = new();
-            TestDog? anotherDog = null;
+            Name = personName
+        };
+        object personObject = person;
 
-            // Act
-            bool notNullDog = dog.IsNull();
-            bool nullDog = anotherDog.IsNull();
+        // Act
+        var extractItem = personObject.TrySystemJsonDeserialization<Person>();
 
-            // Assert
-            notNullDog.ShouldBeFalse();
-            nullDog.ShouldBeTrue();
-        }
+        // Assert
+        extractItem.ShouldNotBeNull();
+        extractItem.Name = personName;
+    }
 
-                [Fact]
-        public void IsNotNull()
-        {
-            // Arrange
-            TestDog dog = new();
-            TestDog? anotherDog = null;
+    [Fact]
+    public void TrySystemJsonDeserializationString()
+    {
+        // Arrange
+        var personName = "Joe";
+        object personObject = personName;
 
-            // Act
-            bool notNullDog = dog.IsNotNull();
-            bool nullDog = anotherDog.IsNotNull();
+        // Act
+        var extractItem = personObject.TrySystemJsonDeserialization<string>();
 
-            // Assert
-            notNullDog.ShouldBeTrue();
-            nullDog.ShouldBeFalse();
-        }
+        // Assert
+        extractItem.ShouldNotBeNull();
+        extractItem.ShouldBe(personName);
     }
 }

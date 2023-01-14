@@ -1,36 +1,35 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <Authors>LNA-DEV</Authors>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryType>git</RepositoryType>
-    <PackageProjectUrl>https://ce.lna-dev.net/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/LNA-DEV/CommonExtensions</RepositoryUrl>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageId>LNA-DEV.$(AssemblyName)</PackageId>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <PackageIcon>Pingüino-Square.png</PackageIcon>
-    <Description>This is a nuget-package / C# libary with common extensions. It's open source on GitHub and available in the default nuget-galllery nuget.org. The CI/CD pipeline is set up to publish a push to master automatically to the nuget-gallery. If you have a good idea for a new extension method go to GitHub and participate in the project.</Description>
-    <PackageTags>Extensions;Extension;Common;CommonExtension;CommonExtensions;LNA-DEV</PackageTags>
-	<!--<TargetFramework>net6</TargetFramework>-->
-	<!--<ImplicitUsings>enable</ImplicitUsings>-->
-    <!--<Nullable>enable</Nullable>-->
-  </PropertyGroup>
+    <PropertyGroup>
+        <Authors>LNA-DEV</Authors>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryType>git</RepositoryType>
+        <PackageProjectUrl>https://ce.lna-dev.net/</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/LNA-DEV/CommonExtensions</RepositoryUrl>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <PackageId>LNA-DEV.$(AssemblyName)</PackageId>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <PackageIcon>Pingüino-Square.png</PackageIcon>
+        <Description>This is a nuget-package / C# libary with common extensions. It's open source on GitHub and available in the default nuget-galllery nuget.org. The CI/CD pipeline is set up to publish a push to master automatically to the nuget-gallery. If you have a good idea for a new extension method go to GitHub and participate in the project.</Description>
+        <PackageTags>Extensions;Extension;Common;CommonExtension;CommonExtensions;LNA-DEV</PackageTags>
+        <!--<TargetFramework>net6</TargetFramework>-->
+        <!--<ImplicitUsings>enable</ImplicitUsings>-->
+        <!--<Nullable>enable</Nullable>-->
+    </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\Pingüino-Square.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+    <ItemGroup>
+        <None Include="..\Pingüino-Square.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+        <None Include="..\README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
 
-  <ItemGroup>
-  <!-- TODO Maybe remove Shouldly here -->
-    <PackageReference Include="Shouldly" Version="4.0.3" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="System.Text.Json" Version="7.0.1"/>
+    </ItemGroup>
 
 </Project>

@@ -13,14 +13,11 @@ namespace CommonExtensions
 
         public static string SplitToString(this IEnumerable<string> strings, string separator)
         {
-            string result = "";
+            var result = "";
 
             if (strings != null)
             {
-                foreach (var item in strings)
-                {
-                    result += item + separator;
-                }
+                foreach (var item in strings) result += item + separator;
 
                 result = result.Remove(result.Length - separator.Length);
             }

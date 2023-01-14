@@ -1,8 +1,7 @@
-namespace CommonExtensions.Test.Models
+namespace CommonExtensions.Test.Models;
+
+public class TestDog
 {
-    public class TestDog
-    {
-        public string? Name { get; set; }
-        public int LegCount { get; set; }
-    }
+    public string? Name { get; set; }
+    public int LegCount { get; set; }
 }
