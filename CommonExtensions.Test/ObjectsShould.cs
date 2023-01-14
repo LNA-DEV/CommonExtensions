@@ -1,40 +1,39 @@
 using CommonExtensions.Test.Models;
 using Shouldly;
 
-namespace CommonExtensions.Test
+namespace CommonExtensions.Test;
+
+public class ObjectsShould
 {
-    public class ObjectsShould
+    [Fact]
+    public void IsNull()
     {
-        [Fact]
-        public void IsNull()
-        {
-            // Arrange
-            TestDog dog = new();
-            TestDog? anotherDog = null;
+        // Arrange
+        TestDog dog = new();
+        TestDog? anotherDog = null;
 
-            // Act
-            bool notNullDog = dog.IsNull();
-            bool nullDog = anotherDog.IsNull();
+        // Act
+        var notNullDog = dog.IsNull();
+        var nullDog = anotherDog.IsNull();
 
-            // Assert
-            notNullDog.ShouldBeFalse();
-            nullDog.ShouldBeTrue();
-        }
+        // Assert
+        notNullDog.ShouldBeFalse();
+        nullDog.ShouldBeTrue();
+    }
 
-        [Fact]
-        public void IsNotNull()
-        {
-            // Arrange
-            TestDog dog = new();
-            TestDog? anotherDog = null;
+    [Fact]
+    public void IsNotNull()
+    {
+        // Arrange
+        TestDog dog = new();
+        TestDog? anotherDog = null;
 
-            // Act
-            bool notNullDog = dog.IsNotNull();
-            bool nullDog = anotherDog.IsNotNull();
+        // Act
+        var notNullDog = dog.IsNotNull();
+        var nullDog = anotherDog.IsNotNull();
 
-            // Assert
-            notNullDog.ShouldBeTrue();
-            nullDog.ShouldBeFalse();
-        }
+        // Assert
+        notNullDog.ShouldBeTrue();
+        nullDog.ShouldBeFalse();
     }
 }
