@@ -36,4 +36,38 @@ public class ObjectsShould
         notNullDog.ShouldBeTrue();
         nullDog.ShouldBeFalse();
     }
+
+    [Fact]
+    public void TrySystemJsonDeserializationObject()
+    {
+        // Arrange
+        var personName = "Joe";
+        var person = new Person
+        {
+            Name = personName
+        };
+        object personObject = person;
+
+        // Act
+        var extractItem = personObject.TrySystemJsonDeserialization<Person>();
+
+        // Assert
+        extractItem.ShouldNotBeNull();
+        extractItem.Name = personName;
+    }
+
+    [Fact]
+    public void TrySystemJsonDeserializationString()
+    {
+        // Arrange
+        var personName = "Joe";
+        object personObject = personName;
+
+        // Act
+        var extractItem = personObject.TrySystemJsonDeserialization<string>();
+
+        // Assert
+        extractItem.ShouldNotBeNull();
+        extractItem.ShouldBe(personName);
+    }
 }
