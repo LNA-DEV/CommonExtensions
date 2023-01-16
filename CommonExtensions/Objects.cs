@@ -1,24 +1,38 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 
 namespace CommonExtensions
 {
+    /// <summary>
+    /// The Objects class contains extension methods for all kinds of objects.
+    /// </summary>
     public static class Objects
     {
         /// <summary>
-        ///     <para>Returns true if an object is null</para>
-        ///     <para>Returns false if an object is not null</para>
+        ///     Method to check if an object is null.
         /// </summary>
-        public static bool IsNull<T>(this T value)
+        /// <param name="value">Value which will be null checked.</param>
+        /// <typeparam name="T">Type which will be null checked.</typeparam>
+        /// <returns>
+        ///     Returns true if an object is null.
+        ///     Returns false if an object is not null.
+        /// </returns>
+        public static bool IsNull<T>([NotNullWhen(false)] this T value)
         {
             return value == null;
         }
 
         /// <summary>
-        ///     <para>Returns true if an object is not null</para>
-        ///     <para>Returns false if an object is null</para>
+        ///     Method to check if an object is null.
         /// </summary>
-        public static bool IsNotNull<T>(this T value)
+        /// <param name="value">Value which will be null checked.</param>
+        /// <typeparam name="T">Type which will be null checked.</typeparam>
+        /// <returns>
+        ///     Returns true if an object is not null. 
+        ///     Returns false if an object is null.
+        /// </returns>
+        public static bool IsNotNull<T>([NotNullWhen(true)] this T value)
         {
             return !value.IsNull();
         }

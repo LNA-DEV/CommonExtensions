@@ -10,9 +10,7 @@ namespace CommonExtensions
         /// </summary>
         public static bool IsNullOrEmpty<T>(this IEnumerable<T> elements)
         {
-            if (elements == null || !elements.Any()) return true;
-
-            return false;
+            return elements == null || !elements.Any();
         }
 
         /// <summary>
