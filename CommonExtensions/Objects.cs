@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 
 namespace CommonExtensions
@@ -9,7 +10,7 @@ namespace CommonExtensions
         ///     <para>Returns true if an object is null</para>
         ///     <para>Returns false if an object is not null</para>
         /// </summary>
-        public static bool IsNull<T>(this T value)
+        public static bool IsNull<T>([NotNullWhen(false)] this T value)
         {
             return value == null;
         }
@@ -18,7 +19,7 @@ namespace CommonExtensions
         ///     <para>Returns true if an object is not null</para>
         ///     <para>Returns false if an object is null</para>
         /// </summary>
-        public static bool IsNotNull<T>(this T value)
+        public static bool IsNotNull<T>([NotNullWhen(true)] this T value)
         {
             return !value.IsNull();
         }
