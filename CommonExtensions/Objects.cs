@@ -40,10 +40,9 @@ namespace CommonExtensions
 
             if (!(obj is JsonElement jsonElement))
                 throw new ArgumentException($"Object was not of type {typeof(T)} or JsonElement");
-            
+
             var item = jsonElement.Deserialize<T>();
             return item;
-
         }
     }
 }

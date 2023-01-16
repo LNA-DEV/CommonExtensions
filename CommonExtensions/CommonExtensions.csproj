@@ -5,6 +5,7 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <RepositoryType>git</RepositoryType>
         <PackageProjectUrl>https://ce.lna-dev.net/</PackageProjectUrl>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <RepositoryUrl>https://github.com/LNA-DEV/CommonExtensions</RepositoryUrl>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <PackageId>LNA-DEV.$(AssemblyName)</PackageId>
