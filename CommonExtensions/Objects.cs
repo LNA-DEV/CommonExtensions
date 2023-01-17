@@ -5,7 +5,7 @@ using System.Text.Json;
 namespace CommonExtensions
 {
     /// <summary>
-    /// The Objects class contains extension methods for all kinds of objects.
+    ///     The Objects class contains extension methods for all kinds of objects.
     /// </summary>
     public static class Objects
     {
@@ -29,7 +29,7 @@ namespace CommonExtensions
         /// <param name="value">Value which will be null checked.</param>
         /// <typeparam name="T">Type which will be null checked.</typeparam>
         /// <returns>
-        ///     Returns true if an object is not null. 
+        ///     Returns true if an object is not null.
         ///     Returns false if an object is null.
         /// </returns>
         public static bool IsNotNull<T>([NotNullWhen(true)] this T value)
@@ -52,8 +52,10 @@ namespace CommonExtensions
         {
             if (obj.GetType() == typeof(T)) return (T)obj;
 
+            if (obj is string s) return JsonSerializer.Deserialize<T>(s);
+
             if (!(obj is JsonElement jsonElement))
-                throw new ArgumentException($"Object was not of type {typeof(T)} or JsonElement");
+                throw new ArgumentException($"Object was not of type {typeof(T)} or {nameof(JsonElement)}");
 
             var item = jsonElement.Deserialize<T>();
             return item;
