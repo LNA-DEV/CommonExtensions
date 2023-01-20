@@ -4,12 +4,12 @@ using System.Security.Cryptography;
 namespace CommonExtensions.Cryptography
 {
     /// <summary>
-    /// Extension Methods based on the RSA class.
+    ///     Extension Methods based on the RSA class.
     /// </summary>
     public static class Rsa
     {
         /// <summary>
-        /// Extract PrivateKey of RSA class in PEM format.
+        ///     Extract PrivateKey of RSA class in PEM format.
         /// </summary>
         /// <param name="rsa">The RSA class of which the key should be extracted.</param>
         /// <returns>RSA PrivateKey in PEM format.</returns>
@@ -24,7 +24,7 @@ namespace CommonExtensions.Cryptography
         }
 
         /// <summary>
-        /// Extract PublicKey of RSA class in PEM format.
+        ///     Extract PublicKey of RSA class in PEM format.
         /// </summary>
         /// <param name="rsa">The RSA class of which the key should be extracted.</param>
         /// <returns>RSA PublicKey in PEM format.</returns>
