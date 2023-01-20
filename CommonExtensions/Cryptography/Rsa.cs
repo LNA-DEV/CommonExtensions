@@ -13,7 +13,7 @@ namespace CommonExtensions.Cryptography
         /// </summary>
         /// <param name="rsa">The RSA class of which the key should be extracted.</param>
         /// <returns>RSA PrivateKey in PEM format.</returns>
-        public static string ExtractPrivateKeyPem(this RSA rsa)
+        public static string ExtractRsaPrivateKeyPem(this RSA rsa)
         {
             const string beginRsaPrivateKey = "-----BEGIN RSA PRIVATE KEY-----";
             const string endRsaPrivateKey = "-----END RSA PRIVATE KEY-----";
@@ -28,7 +28,7 @@ namespace CommonExtensions.Cryptography
         /// </summary>
         /// <param name="rsa">The RSA class of which the key should be extracted.</param>
         /// <returns>RSA PublicKey in PEM format.</returns>
-        public static string ExtractPublicKeyPem(this RSA rsa)
+        public static string ExtractRsaPublicKeyPem(this RSA rsa)
         {
             const string beginRsaPublicKey = "-----BEGIN RSA PUBLIC KEY-----";
             const string endRsaPublicKey = "-----END RSA PUBLIC KEY-----";
