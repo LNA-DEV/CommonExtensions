@@ -65,7 +65,7 @@ public class ObjectsShould
     public void TrySystemJsonDeserializationString()
     {
         // Arrange
-        var person = new Person()
+        var person = new Person
         {
             Name = "LNA-DEV"
         };
@@ -78,31 +78,31 @@ public class ObjectsShould
         extractItem.ShouldNotBeNull();
         extractItem.ShouldBeEquivalentTo(person);
     }
-    
+
     [Fact]
     public void TrySystemJsonDeserializationJsonElement()
     {
         // Arrange
-        var person = new Person()
+        var person = new Person
         {
             Name = "LNA-DEV"
         };
         var jsonElement = JsonSerializer.SerializeToDocument(person).RootElement;
         var obj = (object)jsonElement;
-        
+
         // Act
         var extractItem = obj.TrySystemJsonDeserialization<Person>();
-    
+
         // Assert
         extractItem.ShouldNotBeNull();
         extractItem.ShouldBeEquivalentTo(person);
     }
-    
+
     [Fact]
     public void TrySystemJsonDeserializationException()
     {
         // Arrange
-        var person = new Person()
+        var person = new Person
         {
             Name = "LNA-DEV"
         };
@@ -118,7 +118,7 @@ public class ObjectsShould
             Assert.True(true);
             return;
         }
-        
+
         Assert.True(false);
     }
 }
