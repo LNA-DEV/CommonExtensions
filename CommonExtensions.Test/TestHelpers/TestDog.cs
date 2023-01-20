@@ -1,4 +1,4 @@
-namespace CommonExtensions.Test.Models;
+namespace CommonExtensions.Test.TestHelpers;
 
 public class TestDog
 {

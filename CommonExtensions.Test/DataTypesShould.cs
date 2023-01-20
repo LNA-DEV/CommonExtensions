@@ -1,4 +1,5 @@
-﻿using Shouldly;
+﻿using CommonExtensions.Test.TestHelpers;
+using Shouldly;
 
 namespace CommonExtensions.Test;
 
@@ -52,16 +53,4 @@ public class DataTypesShould
         company.Boss.IsDefault().ShouldBeFalse();
         company.Employees.IsDefault().ShouldBeFalse();
     }
-}
-
-//Classes for Testing
-public class Company
-{
-    public Person? Boss { get; set; }
-    public Person[]? Employees { get; set; }
-}
-
-public class Person
-{
-    public string? Name { get; set; }
 }

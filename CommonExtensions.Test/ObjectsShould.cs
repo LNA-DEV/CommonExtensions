@@ -1,4 +1,5 @@
-using CommonExtensions.Test.Models;
+using System.Text.Json;
+using CommonExtensions.Test.TestHelpers;
 using Shouldly;
 
 namespace CommonExtensions.Test;
@@ -9,7 +10,11 @@ public class ObjectsShould
     public void IsNull()
     {
         // Arrange
-        TestDog dog = new();
+        TestDog dog = new()
+        {
+            LegCount = 4,
+            Name = "Kira"
+        };
         TestDog? anotherDog = null;
 
         // Act
@@ -60,14 +65,60 @@ public class ObjectsShould
     public void TrySystemJsonDeserializationString()
     {
         // Arrange
-        var personName = "Joe";
-        object personObject = personName;
+        var person = new Person()
+        {
+            Name = "LNA-DEV"
+        };
+        object personObject = JsonSerializer.Serialize(person);
 
         // Act
-        var extractItem = personObject.TrySystemJsonDeserialization<string>();
+        var extractItem = personObject.TrySystemJsonDeserialization<Person>();
 
         // Assert
         extractItem.ShouldNotBeNull();
-        extractItem.ShouldBe(personName);
+        extractItem.ShouldBeEquivalentTo(person);
+    }
+    
+    [Fact]
+    public void TrySystemJsonDeserializationJsonElement()
+    {
+        // Arrange
+        var person = new Person()
+        {
+            Name = "LNA-DEV"
+        };
+        var jsonElement = JsonSerializer.SerializeToDocument(person).RootElement;
+        var obj = (object)jsonElement;
+        
+        // Act
+        var extractItem = obj.TrySystemJsonDeserialization<Person>();
+    
+        // Assert
+        extractItem.ShouldNotBeNull();
+        extractItem.ShouldBeEquivalentTo(person);
+    }
+    
+    [Fact]
+    public void TrySystemJsonDeserializationException()
+    {
+        // Arrange
+        var person = new Person()
+        {
+            Name = "LNA-DEV"
+        };
+
+        // Act
+        try
+        {
+            var extractItem = person.TrySystemJsonDeserialization<string>();
+        }
+        catch (ArgumentException ex)
+        {
+            // Assert
+            Assert.True(true);
+            return;
+        }
+        
+        Assert.True(false);
     }
 }

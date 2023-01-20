@@ -48,6 +48,9 @@ namespace CommonExtensions
         ///     If the specified object is not of type T or JsonElement this method throws an
         ///     ArgumentException.
         /// </exception>
+        /// <exception cref="JsonException">
+        ///     If the specified object can not be deserialized.
+        /// </exception>
         public static T TrySystemJsonDeserialization<T>(this object obj)
         {
             if (obj.GetType() == typeof(T)) return (T)obj;
