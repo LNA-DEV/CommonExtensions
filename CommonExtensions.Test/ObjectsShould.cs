@@ -121,4 +121,94 @@ public class ObjectsShould
 
         Assert.True(false);
     }
+
+    [Theory]
+    [InlineData(true)]
+    [InlineData(false)]
+    public void IsSameAs(bool same)
+    {
+        // Arrange
+        var obj1 = new Person
+        {
+            Name = "Cuddlefish"
+        };
+        Person obj2;
+        if (same)
+            obj2 = new Person
+            {
+                Name = "Cuddlefish"
+            };
+        else
+            obj2 = new Person
+            {
+                Name = "Cuddlefish2"
+            };
+
+        // Act
+        var result = obj1.IsSameAs(obj2);
+
+        // Assert
+        result.ShouldBe(same);
+    }
+
+    [Fact]
+    public void IsSameAsRefEqual()
+    {
+        // Arrange
+        var obj1 = new Person
+        {
+            Name = "Cuddlefish"
+        };
+
+        // Act
+        var result = obj1.IsSameAs(obj1);
+
+        // Assert
+        result.ShouldBe(true);
+    }
+
+    [Fact]
+    public void IsSameAsNull()
+    {
+        // Arrange
+        var obj1 = new Person
+        {
+            Name = "Cuddlefish"
+        };
+
+        // Act
+        var result = obj1.IsSameAs(null);
+
+        // Assert
+        result.ShouldBe(false);
+    }
+
+    [Theory]
+    [InlineData(true)]
+    [InlineData(false)]
+    public void IsNotSameAs(bool same)
+    {
+        // Arrange
+        var obj1 = new Person
+        {
+            Name = "Cuddlefish"
+        };
+        Person obj2;
+        if (same)
+            obj2 = new Person
+            {
+                Name = "Cuddlefish"
+            };
+        else
+            obj2 = new Person
+            {
+                Name = "Cuddlefish2"
+            };
+
+        // Act
+        var result = obj1.IsNotSameAs(obj2);
+
+        // Assert
+        result.ShouldBe(!same);
+    }
 }
