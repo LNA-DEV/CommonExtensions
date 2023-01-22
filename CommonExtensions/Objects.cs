@@ -65,13 +65,13 @@ namespace CommonExtensions
         }
 
         /// <summary>
-        /// Compares two objects based on their properties. This method does not only check for reference equality!
+        ///     Compares two objects based on their properties. This method does not only check for reference equality!
         /// </summary>
         /// <param name="obj">The first object which will be compared.</param>
         /// <param name="obj2">The second object which will be compared.</param>
         /// <typeparam name="T">The type of the objects which will be compared.</typeparam>
         /// <returns>
-        /// If two objects are the same this method returns true otherwise false.
+        ///     If two objects are the same this method returns true otherwise false.
         /// </returns>
         public static bool IsSameAs<T>(this T obj, T obj2)
         {
@@ -89,9 +89,9 @@ namespace CommonExtensions
 
             return result;
         }
-        
+
         /// <summary>
-        /// Compares two objects based on their properties. This method does not only check for reference equality!
+        ///     Compares two objects based on their properties. This method does not only check for reference equality!
         /// </summary>
         /// <param name="obj">The first object which will be compared.</param>
         /// <param name="obj2">The second object which will be compared.</param>
