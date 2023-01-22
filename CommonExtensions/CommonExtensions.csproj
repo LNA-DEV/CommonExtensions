@@ -13,6 +13,7 @@
         <PackageIcon>Pingüino-Square.png</PackageIcon>
         <Description>This is a nuget-package / C# libary with common extensions. It's open source on GitHub and available in the default nuget-galllery nuget.org. The CI/CD pipeline is set up to publish a push to master automatically to the nuget-gallery. If you have a good idea for a new extension method go to GitHub and participate in the project.</Description>
         <PackageTags>Extensions;Extension;Common;CommonExtension;CommonExtensions;LNA-DEV</PackageTags>
+        <Nullable>enable</Nullable>
         <!--<TargetFramework>net6</TargetFramework>-->
         <!--<ImplicitUsings>enable</ImplicitUsings>-->
         <!--<Nullable>enable</Nullable>-->
@@ -30,7 +31,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="System.Text.Json" Version="7.0.1"/>
+        <PackageReference Include="System.Text.Json" Version="7.0.1" />
     </ItemGroup>
 
 </Project>

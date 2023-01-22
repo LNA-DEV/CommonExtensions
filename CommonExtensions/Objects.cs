@@ -63,5 +63,43 @@ namespace CommonExtensions
             var item = jsonElement.Deserialize<T>();
             return item;
         }
+
+        /// <summary>
+        /// Compares two objects based on their properties. This method does not only check for reference equality!
+        /// </summary>
+        /// <param name="obj">The first object which will be compared.</param>
+        /// <param name="obj2">The second object which will be compared.</param>
+        /// <typeparam name="T">The type of the objects which will be compared.</typeparam>
+        /// <returns>
+        /// If two objects are the same this method returns true otherwise false.
+        /// </returns>
+        public static bool IsSameAs<T>(this T obj, T obj2)
+        {
+            if (ReferenceEquals(obj, obj2)) return true;
+            if (obj.IsNull() || obj2.IsNull()) return false;
+
+            // Compare all properties of the objects
+            var result = true;
+            foreach (var property in obj.GetType().GetProperties())
+            {
+                var objValue = property.GetValue(obj);
+                var anotherValue = property.GetValue(obj2);
+                if (!objValue.Equals(anotherValue)) result = false;
+            }
+
+            return result;
+        }
+        
+        /// <summary>
+        /// Compares two objects based on their properties. This method does not only check for reference equality!
+        /// </summary>
+        /// <param name="obj">The first object which will be compared.</param>
+        /// <param name="obj2">The second object which will be compared.</param>
+        /// <typeparam name="T">The type of the objects which will be compared.</typeparam>
+        /// <returns>If two objects are the same this method returns false otherwise true.</returns>
+        public static bool IsNotSameAs<T>(this T obj, T obj2)
+        {
+            return !obj.IsSameAs(obj2);
+        }
     }
 }
