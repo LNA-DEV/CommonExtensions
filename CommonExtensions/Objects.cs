@@ -1,6 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 
 namespace CommonExtensions
 {
@@ -55,7 +56,23 @@ namespace CommonExtensions
         {
             if (obj.GetType() == typeof(T)) return (T)obj;
 
-            if (obj is string s) return JsonSerializer.Deserialize<T>(s);
+            switch (obj)
+            {
+                case string s:
+                {
+                    return JsonSerializer.Deserialize<T>(s);
+
+                    break;
+                }
+                case JsonElement e when typeof(T) == typeof(string):
+                {
+                    var json = JsonObject.Create(e)?.ToJsonString();
+
+                    if (json.IsNotNullOrEmpty()) return (T)Convert.ChangeType(json, typeof(T));
+
+                    break;
+                }
+            }
 
             if (!(obj is JsonElement jsonElement))
                 throw new ArgumentException($"Object was not of type {typeof(T)} or {nameof(JsonElement)}");
