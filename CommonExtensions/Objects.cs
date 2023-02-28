@@ -66,7 +66,12 @@ namespace CommonExtensions
                 }
                 case JsonElement e when typeof(T) == typeof(string):
                 {
-                    var json = JsonObject.Create(e)?.ToJsonString();
+                    string json;
+
+                    if (e.ValueKind == JsonValueKind.Object)
+                        json = JsonObject.Create(e)?.ToJsonString();
+                    else
+                        json = JsonArray.Create(e)?.ToJsonString();
 
                     if (json.IsNotNullOrEmpty()) return (T)Convert.ChangeType(json, typeof(T));
 
