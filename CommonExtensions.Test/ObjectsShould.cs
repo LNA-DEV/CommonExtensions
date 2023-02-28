@@ -99,6 +99,25 @@ public class ObjectsShould
     }
 
     [Fact]
+    public void TrySystemJsonDeserializationJsonElementString()
+    {
+        // Arrange
+        var person = new Person
+        {
+            Name = "LNA-DEV"
+        };
+        var jsonElement = JsonSerializer.SerializeToDocument(person).RootElement;
+        var obj = (object)jsonElement;
+
+        // Act
+        var extractItem = obj.TrySystemJsonDeserialization<string>();
+
+        // Assert
+        extractItem.ShouldNotBeNull();
+        extractItem.ShouldBeEquivalentTo(JsonSerializer.Serialize(person));
+    }
+
+    [Fact]
     public void TrySystemJsonDeserializationException()
     {
         // Arrange
