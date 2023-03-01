@@ -138,7 +138,7 @@ public class ObjectsShould
         extractItem.ShouldNotBeNull();
         extractItem.ShouldBeEquivalentTo(JsonSerializer.Serialize(personList));
     }
-    
+
     [Fact]
     public void TrySystemJsonDeserializationJsonElementStringInput()
     {
