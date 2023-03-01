@@ -140,6 +140,22 @@ public class ObjectsShould
     }
 
     [Fact]
+    public void TrySystemJsonDeserializationJsonElementStringInput()
+    {
+        // Arrange
+        var text = @"hi";
+        var jsonElement = JsonSerializer.SerializeToDocument(text).RootElement;
+        var obj = (object)jsonElement;
+
+        // Act
+        var extractItem = obj.TrySystemJsonDeserialization<string>();
+
+        // Assert
+        extractItem.ShouldNotBeNull();
+        extractItem.ShouldBeEquivalentTo(text);
+    }
+
+    [Fact]
     public void TrySystemJsonDeserializationException()
     {
         // Arrange
