@@ -20,7 +20,7 @@ namespace CommonExtensions
         /// <summary>
         ///     Returns FALSE if an IEnumerable is NULL or empty
         /// </summary>
-        public static bool IsNotNullOrEmpty<T>([NotNullWhen(false)] this IEnumerable<T>? elements)
+        public static bool IsNotNullOrEmpty<T>([NotNullWhen(true)] this IEnumerable<T>? elements)
         {
             return !elements.IsNullOrEmpty();
         }
